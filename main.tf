@@ -20,10 +20,14 @@ module "subnet" {
 module "route_tables" {
     source = "./modules/route_tables"
     create_vpc = "${var.create_vpc}"
+    list_az = "${var.list_az}"
     gateway_id = "${module.vpc.gw_id}"
     vpc_id = "${module.vpc.vpc_id}"
     nat_id = "${module.nat.nat_id}"
     private_rt = "${var.private_rt}"
+    public_subnet_id = "${module.subnet.public_subnets}"
+    private_subnet_id = "${module.subnet.private_subnets}"
+    subnet_pri = "${var.subnet_pri}"
 }
 
 module "nat" {
