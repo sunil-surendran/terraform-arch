@@ -5,3 +5,4 @@
 2. Initialised using "terraform init"
 3. Fixed git clone command
 4. Testing "terrafrom apply"
+5. Using workspace location of git repo.
