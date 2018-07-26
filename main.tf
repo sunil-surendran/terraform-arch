@@ -9,10 +9,32 @@ module "vpc" {
 }
 
 module "subnet" {
-    create_vpc = "${var.create_vpc}"
     source = "./modules/subnet"
+    create_vpc = "${var.create_vpc}"
     pub_cidr = "${var.pub_cidr}"
     priv_cidr = "${var.priv_cidr}"
     list_az = "${var.list_az}"
     vpc_id = "${module.vpc.vpc_id}"
 }
+
+module "route_tables" {
+    source = "./modules/route_tables"
+    create_vpc = "${var.create_vpc}"
+    gateway_id = "${module.vpc.gw_id}"
+    vpc_id = "${module.vpc.vpc_id}"
+    nat_id = "${module.nat.nat_id}"
+    private_rt = "${var.private_rt}"
+}
+
+module "nat" {
+    source = "./modules/nat"
+    subnet_id_nat = "${element(module.subnet.public_subnets, 1)}"
+    subnet_pub = "${element(var.subnet_pub, 1)}"
+    create_vpc = "${var.create_vpc}"
+    keyname = "${var.keyname}"
+    list_az = "${element(var.list_az, 1)}"
+    nat_ami = "${var.nat_ami}"
+    vpc_id = "${module.vpc.vpc_id}"
+    exist_vpc_id = "${var.exist_vpc_id}"
+    cidr = "${var.cidr}"
+    }
