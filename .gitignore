@@ -1,0 +1,6 @@
+terraform.tfstate
+terraform.tfstate.backup
+
+.terraform/*
+modules/vpc/.terraform/*
+modules/subnet/.terraform/*
