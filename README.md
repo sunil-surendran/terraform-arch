@@ -18,3 +18,4 @@
 15. Apply on second job.
 16. Reapply
 17. Fixed terraform plan
+18. Path to JQ command
