@@ -10,3 +10,4 @@
 7. Added s3 bucket to store state file.
 8. Fixed errors in Execute code.
 9. Reset
+10. Moving directories to s3.
