@@ -19,3 +19,4 @@
 16. Reapply
 17. Fixed terraform plan
 18. Path to JQ command
+19. Workspace path for JQ
