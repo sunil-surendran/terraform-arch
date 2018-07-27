@@ -8,3 +8,4 @@
 5. Using workspace location of git repo.
 6. Utilizing Jenkins polling.
 7. Added s3 bucket to store state file.
+8. Fixed errors in Execute code.
