@@ -1,6 +1,9 @@
-terraform.tfstate
-terraform.tfstate.backup
+/infrastructure/terraform.tfstate
+/webapplication/terraform.tfstate
+/infrastructure/terraform.tfstate.backup
+/webapplication/terraform.tfstate.backup
 
-.terraform/*
-modules/vpc/.terraform/*
-modules/subnet/.terraform/*
+/infrastructure/.terraform/*
+/webapplication/.terraform/*
+/infrastructure/modules/vpc/.terraform/*
+/webapplication/subnet/.terraform/*
