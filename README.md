@@ -12,4 +12,5 @@
 9. Reset
 10. Moving directories to s3.
 11. Testing 1
-12. Testing 2
+12. Testing 
+13. Rebuild test.
