@@ -7,3 +7,4 @@
 /webapplication/.terraform/*
 /infrastructure/modules/vpc/.terraform/*
 /webapplication/subnet/.terraform/*
+/webapplication/modules/security_groups/.terraform/*
