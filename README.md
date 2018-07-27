@@ -20,3 +20,4 @@
 17. Fixed terraform plan
 18. Path to JQ command
 19. Workspace path for JQ
+20. Jenkins execute code change
