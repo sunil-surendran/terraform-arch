@@ -17,4 +17,4 @@
 14. Second round of pipelineo
 15. Apply on second job.
 16. Reapply
-
+17. Fixed terraform plan
